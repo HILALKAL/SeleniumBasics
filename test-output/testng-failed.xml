@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.class12.ReadingPropertyFile">
+      <class name="com.class12.FligthSearch">
         <methods>
-          <include name="readFile"/>
+          <include name="tearDown"/>
+          <include name="searchFlight"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.class12.ReadingPropertyFile -->
+      </class> <!-- com.class12.FligthSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

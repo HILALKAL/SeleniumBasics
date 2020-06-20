@@ -41,7 +41,7 @@ public class WebElementCommands {
 		WebElement welcome = driver.findElement(By.xpath("//div[@class='login_info']"));
 		System.out.println(welcome.getAttribute("class"));
 		String value = welcome.getText();
-
+System.out.println(value);
 		if (value.contains(userName)) {
 			System.out.println(userName + " is logged in. Test case PASS");
 		} else {

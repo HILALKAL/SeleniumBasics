@@ -28,7 +28,7 @@ public class CommonMethods {
 
 	public static void setUpDriver(String browser, String url) {
 		if (browser.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Celil\\Selenium\\chromedriver.exe");
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Celil\\Selenium\\chromedriver.exe");
 			// For mac
 			//System.setProperty("webdriver.chrome.driver", "src/drivers/chromedriver");
 			// for windows
@@ -46,7 +46,7 @@ public class CommonMethods {
 		//driver.manage().window().fullscreen();;
 		driver.get(url);
 		driver.manage().window().maximize();
-
+		
 	}
 
 	/**

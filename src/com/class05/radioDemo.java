@@ -11,40 +11,40 @@ public class radioDemo {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Celil\\Selenium\\chromedriver.exe");
-		WebDriver driver=new ChromeDriver();
-		
+		WebDriver driver = new ChromeDriver();
+
 		driver.manage().window().maximize();
-		
+
 		driver.get("678");
-		
-		WebElement maleRadio=driver.findElement(By.id("sex-0"));
-		System.out.println(maleRadio.isDisplayed());//true
-		System.out.println(maleRadio.isEnabled());//true
-		System.out.println(maleRadio.isSelected());//false
+
+		WebElement maleRadio = driver.findElement(By.id("sex-0"));
+		System.out.println(maleRadio.isDisplayed());// true
+		System.out.println(maleRadio.isEnabled());// true
+		System.out.println(maleRadio.isSelected());// false
 		// 1 way of clicking on the element
 		maleRadio.click();
-		System.out.println(maleRadio.isSelected());//true
+		System.out.println(maleRadio.isSelected());// true
 		Thread.sleep(2000);
-		
+
 		// 2 way - preffered way
-				String valueToSelect = "Automation Tester";
-				List<WebElement> professionList = driver.findElements(By.name("profession"));
+		String valueToSelect = "Automation Tester";
+		List<WebElement> professionList = driver.findElements(By.name("profession"));
 
-				System.out.println(professionList.size());
+		System.out.println(professionList.size());
 
-				for (WebElement profession : professionList) {
-					
-					if (profession.isEnabled()) {
-						
-						String value = profession.getAttribute("value");
-						System.out.println(value);
-						
-						if (value.equals(valueToSelect)) {
-							profession.click();
-						}
-					}
+		for (WebElement profession : professionList) {
+
+			if (profession.isEnabled()) {
+
+				String value = profession.getAttribute("value");
+				System.out.println(value);
+
+				if (value.equals(valueToSelect)) {
+					profession.click();
 				}
-				Thread.sleep(3000);
+			}
+		}
+		Thread.sleep(3000);
 		driver.quit();
 	}
 

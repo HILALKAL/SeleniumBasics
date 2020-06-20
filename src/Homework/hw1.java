@@ -1,6 +1,7 @@
 package Homework;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 
 import utils.CommonMethods;
 
@@ -24,6 +25,9 @@ public class hw1 extends CommonMethods{
 			System.out.println("Not Displayed");
 		}
 		driver.findElement(By.xpath("//div[@id='divLoginButton']/input")).click();
+		
+		
+		
 	}
 
 }

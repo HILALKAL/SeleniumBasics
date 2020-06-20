@@ -31,6 +31,8 @@ public class CalenderDemo extends CommonMethods{
 				cell.click();
 			}
 		}
+		
+		
 		Thread.sleep(7000);
 		//driver.quit();
 	}

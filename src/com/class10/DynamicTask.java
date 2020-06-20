@@ -42,8 +42,7 @@ Close browser
 		    
 		        }
 		    
-		    }
-		
+		    }		
 	}
 
 }

@@ -12,8 +12,8 @@ public class linkText {
 		WebDriver driver=new ChromeDriver();
 		driver.navigate().to("https://www.toolsqa.com/automation-practice-form/");
 		Thread.sleep(2000);
-		//driver.findElement(By.linkText("Link Test")).click();
-        driver.findElement(By.partialLinkText("Partial Link")).click();
+		driver.findElement(By.linkText("Link Test")).click();
+        driver.quit();
 	}
 
 }
